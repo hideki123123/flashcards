@@ -38,35 +38,5 @@ h1 {
     justify-content: space-around;
 }
 
-.flashcard {
-    background: rgba(255, 0, 255, 0.1);
-    border: 2px solid var(--punk-cyan);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 350px;
-    box-shadow: 0 0 15px var(--glass-cyan);
-    transition: transform 0.3s;
-   
-}
 
-.flashcard:hover {
-    transform: scale(1.05);
-}
 
-.question {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.answer {
-    font-size: 1em;
-    color: var(--punk-green);
-    opacity: 0.9;
-}
-
-footer {
-    min-height: 50px;
-    background-color: var(--glass-cyan);
-    padding: .25rem;
-}
