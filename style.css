@@ -1,72 +1,57 @@
-:root {
-    --punk-cyan: #00ffcc;
-    --punk-green: #00ff37;
-    --glass-cyan: rgba(0, 255, 255, 0.3);
-    --punk-pink: #ff007f;
-    --bg-black: #021016;
-}
-
 body {
-    background-color: var(--bg-black);
-    color: var(--punk-cyan);
-    font-family: 'Courier New', monospace;
-    text-align: center;
-    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
     margin: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-color {
-    color: white;
+    padding: 0;
+    color: #333;
 }
 
 header {
-    min-height: 50px;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
 }
 
 h1 {
-    color: var(--punk-pink);
-    text-shadow: 0 0 10px var(--punk-pink), 0 0 20px var(--punk-pink);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
 #container {
-    width: 100%;
     display: flex;
-    gap: 0rem;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
-.flashcard {
-    background: rgba(255, 0, 255, 0.1);
-    border: 2px solid var(--punk-cyan);
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px auto;
-    width: 350px;
-    box-shadow: 0 0 15px var(--glass-cyan);
-    transition: transform 0.3s;
-   
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.flashcard:hover {
+.card:hover {
     transform: scale(1.05);
-}
-
-.question {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.answer {
-    font-size: 1em;
-    color: var(--punk-green);
-    opacity: 0.9;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    min-height: 50px;
-    background-color: var(--glass-cyan);
-    padding: .25rem;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f4f8;
 }
