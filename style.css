@@ -1,9 +1,9 @@
 :root {
-    --punk-cyan: #00ffcc;
+    --punk-cyan: #a216c5;
     --punk-green: #00ff37;
-    --glass-cyan: rgba(0, 255, 255, 0.3);
-    --punk-pink: #ff007f;
-    --bg-black: #021016;
+    --glass-cyan: rgba(245, 118, 0, 0.836);
+    --punk-pink: #1d048a;
+    --bg-black: #00b3ff;
 }
 
 body {
