@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaberson cards</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Flashcards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Flashcards de Ensino Médio</h1>
-    </header>
-    <main>
-        <section id="container">
 
-        </section>
-    </main>
-    <footer>
-        <p>abfjkowjaslgkdfgklmdf</p>
-    </footer>
-    <script src="main.js"></script>
-    <script src="perguntas.js"></script>
+    <div class="card" id="flashcard"></div>
+    <button id="nextButton">Mostrar Resposta</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
