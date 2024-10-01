@@ -1,100 +1,98 @@
 criaCartao (
-    'Química', 
-    'Até quantas camadas possui um átomo, e quantos elétrons existem em cada camada?',
-    'K-2 L-8 M-18 N-32 O-32 P-18 Q-8')
+    'Química orgânica',
+    'Como a tetravalência do carbono influencia a diversidade dos compostos orgânicos?',
+    'Permitindo a formação de quatro ligações covalentes simultâneas, gerando uma enorme variedade de estruturas.')
     
-    criaCartao (
-    'Química', 
-    'Qual a regra do octeto?',
-    'Para um átomo ficar estável ele precisa de 8 elétrons em sua C.V. com exceção do Hidrogênio e do Hélio')
+    criaCartao(
+    'Química orgânica', 
+    'Explique a importância das diferentes formas alotrópicas do carbono.',
+    'As variações de estruturas e disposições do carbono podem gerar carbono, grafite e fulerenos.')
     
-    criaCartao (
-    'Química', 
-    'Qual a nomenclatura de um Ácido de acordo com a IUPAC?',
-    'Depende se ele for um Hidrácido:Ácido elemento + ídrico ou um Oxiácido:Ácido elemento ico/oso dependendo do nox dos átomos')
+    criaCartao(
+    'Química orgânica',
+    'Qual a relevância da hibridação sp2 no comportamento de compostos aromáticos?',
+    'Permite a formação de ligações pi conjugadas em anéis aromáticos, como o benzeno, conferindo estabilidade e propriedades únicas aos compostos aromáticos.')
     
-    criaCartao (
-    'Química',
-    'Qual a nomenclatura de uma Base de acordo com a IUPAC?',
-    'Depende se o cátion for fixo ou variável Fixo:Hidróxido de elemento Variável:Hidróxido de elemento + alg. romano ou Hidróxidos de elemento em latim ico para carga maior oso para carga menor')
+    criaCartao(
+    'Química orgânica',
+    'Descreva a hibridação sp3',
+    'Ocorre quando um átomo de carbono forma quatro ligações sigma, resultando na geometria tetraédrica. Essa formação é crucrial na formação  de compostos orgânicos complexos.')
     
-    criaCartao (
-    'Química', 
-    'Qual a nomenclatura de um Óxido ametal de acordo com a IUPAC?',
-    'mono/di/tri/tetra óxido de di/tri/tetra nome do metal')
+    criaCartao(
+    'Química orgânica',
+    'O que são cadeias carbônicas?',
+    'Estruturas formadas por átomos de carbono interligados.')
+    criaCartao(
+    'Urbanizacao',
+    'qual a diferença entre município e cidade?',
+    'municipio é a entidade administrativa, enquanto  cidade é a área urbana que serve como sede do município')
     
-    criaCartao (
-    'Física', 
-    'Qual a fórmula conhecida como sorvete?',
-    'S=S0 + V.t')
+    criaCartao(
+    'urbanizaçao',
+    'o que é um sítio urbano?',
+    'é a localização geografica e as características naturais de um lugar onde uma cidade se desenvolve, influenciando sua formação e crescimento')
     
-    criaCartao (
-    'Física', 
-    'Qual a fórmula usada para calcular a tensão?',
-    'U=R.i')
+    criaCartao(
+    'urbanização',
+    'quais sao as criticas ao processo de gentrificaçao',
+    'as criticas incluem aumento da desigualdade social, perda de identidade cultural e exclusao dos moradores originais')
     
-    criaCartao (
-    'Biologia', 
-    'O que diferencia uma Gimnosperma de uma Angiosperma?',
-    'A Angiosperma possui flores e frutos, se demonstrando mais desenvolvida que uma Gimnosperma')
+    criaCartao(
+    'história',
+    'qual foi o impacto da revolução francesa nas primeiras rebeliões na América espanhola?',
+    'inspirou movimentos de independência e rebelioes cobrra o dominio colonial espanhol na america latina')
     
-    criaCartao (
-    'História', 
-    'O que foi a Batalha de Stalingrado?',
-    'Foi um esforço gigantesco realizado pelos soviéticos após meses de combates, os nazistas foram derrotados ao custo de dois milhões de mortos, resultaram em uma vitória soviética fundamental para o destino da guerra')
+    criaCrtao(
+    'historia',
+    'como a revolução americana influenciou as prineiras rebelioes na america espanhola?',
+    'encorajou e inspirou a independência de uma colonia encorajando a lutar pela independência')
     
-    criaCartao (
-    'História', 
-    'O que causou o começo da revolução francesa e qual foi seu motivo?',
-    'A Queda da Bastilha, foi motivada pela desigualdade social, pela crise econômica e pela fome, sendo inspirada nos ideais do Iluminismo')
+    criaCartao(
+    'historia',
+    'quem foi Tupac amaru ll e qual sua importância nas primeiras rebeliões?',
+    'foi uma referência no Peru em 1780 simbolizando a resistencia contra a opressao colonial')
     
-    criaCartao (
-    'Geografia',
-    'O que é o setor terciário em uma economia?',
-    'Setor que oferece serviços e produtos, de modo direto, para os consumidores',)
+    criaCartao(
+    'historia',
+    'qual foi umas das cUsas dss principais causas das primeiras revelioes na americ espanhola?',
+    'influência das ideias iluministas e exemplo das revolucoes contra os colonos')
     
-    criaCartao (
-    'Biologia',
-    'Sobre pirâmides ecológicas, aquelas que mensuram o fluxo de energia, elas podem ser inversas ou somente unidirecionais?',
-    'Elas são apenas unidirecionais, nunca inversas',)
+    criaCartao(
+    'Sociologia',
+    'Qual a relação entre poder de dominação legítima segundo Max Weber?',
+    'Weber define dominação legítima como a aceitação do poder como válido e justo pelos subordinados.')
     
-    criaCartao (
-    'Matemática',
-    'Como calcular a área de um triangulo equilátero?',
-    'Há vários modos, mas são dois os principais: 1 - Utilizar a fórmula tradicional 2 - Utilizar a fórmula com seno 60° ',)
+    criaCartao(
+    'Sociologia',
+    'Quais são as formas de poder',
+    'Coercitivo, que usa força e ameaças; poder econômico e poder ideológico')
     
-    criaCartao (
-    'História',
-    'Sobre a Guerra Fria, por que ela foi considerada fria?',
-    'Pois ela for marcada por conflitos militares indiretos e uma corrida de avanços cientificos, sociais etc; as duas superpotências da época nunca entraram em conflito armado',)
+    criaCartao(
+    'Sociologia',
+    'Como Max Weber define a dominação carismática?',
+    'Ela é baseada na devoção a um líder carismático.')
     
-    criaCartao (
-    'Matemática',
-    'Sobre as funções trigonométricas, a função tangente pode ser obtida pela razão entre:',
-    'A razão seno e cosseno ou cateto oposto sobre o adjacente',)
+    criaCartao(
+    'Sociologia',
+    'Qual a diferença entre dominação legal-racional e dominação tradicional?',
+    'Legal-racional é baseada em normas e regras impessoais e formalizadas, enquanto a tradicional depende da continuidade histórica')
     
-    criaCartao (
-    'Matemática + física',
-    'Podemos representar as ondas por meio das funções seno ou cosseno',
-    'Sim, mas, se necessário, é preciso alterar certos elementos da função para se obter o resultado desejado',)
+    criaCartao(
+    'Sociologia',
+    'O que Émile Durkheim entende por fato social?',
+    'Maneiras de agir, pensar e sentir exteriores e anteriores ao indivíduo')
     
-    criaCartao (
-    'Física',
-    'Sobre as ondas, qual fator, ou mais, modifica a velocidade da onda?',
-    'A frequência e o comprimento de onda, pois: V = Comprimento de onda x Frequência',)
+    criaCartao(
+    'Sociologia',
+    'O que é a mais valia segundo Karl Marx?',
+    'É o valor extra produzido pelo trabalhador que é apropriado pelo capitalista.')
     
-    criaCartao (
-    'Física',
-    'Sobre ondulatória,  frequência e o período estão relacionados. Demonstre essa relação por meio de uma equação',
-    'f = 1/p',)
+    criaCartao(
+    'Sociologia',
+    'Explique a teoria da acumulação primitiva de Karl Marx',
+    'É o processo histórico que separou os produtores diretos dos meios de produção, criando uma classe trabalhadora desprovida de bens e uma classe capitalista que controla os meios de produção.')
     
-    criaCartao (
-    'Português',
-    'Qual é a diferença entre antítese e paradoxo?',
-    'Um mistura ideias opostas em dois elementos, já o paradoxo são duas ideias opostas em um só elemento',)
-    
-    criaCartao (
-    'Química',
-    'Um sal pode ser formado pela reaçåo entre:',
-    'Ácidos e bases',)
-    
+    criaCartao(
+    'Sociologia',
+    'Como Marx define o fetichismo da mercadoria?',
+    'Ocorre quando as relações sociais de produção se escondem por trás das relações entre meracadorias, dando a entender que objetos tem valor intrínseco,  independente do trabalho humano.')
