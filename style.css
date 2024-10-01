@@ -1,0 +1,72 @@
+:root {
+    --punk-cyan: #00ffcc;
+    --punk-green: #00ff37;
+    --glass-cyan: rgba(0, 255, 255, 0.3);
+    --punk-pink: #ff007f;
+    --bg-black: #021016;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--punk-cyan);
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+color {
+    color: white;
+}
+
+header {
+    min-height: 50px;
+}
+
+h1 {
+    color: var(--punk-pink);
+    text-shadow: 0 0 10px var(--punk-pink), 0 0 20px var(--punk-pink);
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    gap: 0rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flashcard {
+    background: rgba(255, 0, 255, 0.1);
+    border: 2px solid var(--punk-cyan);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 350px;
+    box-shadow: 0 0 15px var(--glass-cyan);
+    transition: transform 0.3s;
+   
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+}
+
+.question {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.answer {
+    font-size: 1em;
+    color: var(--punk-green);
+    opacity: 0.9;
+}
+
+footer {
+    min-height: 50px;
+    background-color: var(--glass-cyan);
+    padding: .25rem;
+}
