@@ -29,3 +29,6 @@ function criaCartao(categoria, pergunta, resposta) {
       cartao.classList.toggle('flipped');
     });
   }
+  cartao.addEventListener('click', () => {
+    cartao.classList.toggle('flipped');
+});
