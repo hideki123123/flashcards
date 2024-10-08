@@ -1,24 +1,31 @@
-function criaCartao (categoria, pergunta, resposta){
+function criaCartao(categoria, pergunta, resposta) {
     let container = document.getElementById('container');
-    let cartao = document.createElement('article');
-    cartao.className = 'cartao';
-    cartao.innerHTML = `    
-    <div class="cartao-conteudo flashcard">
-    <h3>${categoria}</h3>
-    <div class="cartao-pergunta question">
+    let cartao = document.createElement('div');
+    cartao.className = 'flashcard';
+  
+    let front = document.createElement('div');
+    front.className = 'front';
+    front.innerHTML = `
+      <h3>${categoria}</h3>
+      <div class="cartao-pergunta question">
         <p>${pergunta}</p>
-    </div>
-    <div class="cartao-resposta answer">
+      </div>
+    `;
+  
+    let back = document.createElement('div');
+    back.className = 'back';
+    back.innerHTML = `
+      <div class="cartao-resposta answer">
         <p>${resposta}</p>
-    </div>
-</div>
-    `
-    container.appendChild(cartao)
-}       
-const flashcards = document.querySelectorAll('.flashcard');
-
-flashcards.forEach((flashcard) => {
-  flashcard.addEventListener('click', () => {
-    flashcard.classList.toggle('flipped');
-  });
-});
+      </div>
+    `;
+  
+    cartao.appendChild(front);
+    cartao.appendChild(back);
+  
+    container.appendChild(cartao);
+  
+    cartao.addEventListener('click', () => {
+      cartao.classList.toggle('flipped');
+    });
+  }
