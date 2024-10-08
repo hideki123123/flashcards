@@ -80,3 +80,14 @@ footer {
         width: 90%; /* Adjust the width for smaller screens */
     }
 }
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.5s; /* Adicionar efeito de transição */
+  }
+  
+  .card:hover {
+    transform: rotate(45deg); /* Girar 45 graus ao passar o mouse */
+  }

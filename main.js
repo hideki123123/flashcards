@@ -15,3 +15,8 @@ function criaCartao (categoria, pergunta, resposta){
     `
     container.appendChild(cartao)
 }       
+const card = document.querySelector('.card');
+
+card.addEventListener('click', () => {
+  card.style.transform = 'rotate(45deg)'; /* Girar 45 graus ao clicar */
+});
