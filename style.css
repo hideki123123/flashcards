@@ -30,7 +30,8 @@
 }
 
 .flashcard {
-    border: #000000 solid 10px; 
+    border: #000000 solid 5px; 
+    border-radius: 10px; ;
     width: 500px;
     height: 300px;
     position: relative;
