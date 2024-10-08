@@ -80,14 +80,36 @@ footer {
         width: 90%; /* Adjust the width for smaller screens */
     }
 }
-.card {
+.flashcard {
+    position: relative;
     width: 200px;
-    height: 300px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    transition: transform 0.5s; /* Adicionar efeito de transição */
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
   }
   
-  .card:hover {
-    transform: rotate(45deg); /* Girar 45 graus ao passar o mouse */
+  .front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+  }
+  
+  .front {
+    background-color: #fff;
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard:hover {
+    transform: rotateY(180deg);
   }

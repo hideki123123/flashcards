@@ -15,8 +15,10 @@ function criaCartao (categoria, pergunta, resposta){
     `
     container.appendChild(cartao)
 }       
-const card = document.querySelector('.card');
+const flashcards = document.querySelectorAll('.flashcard');
 
-card.addEventListener('click', () => {
-  card.style.transform = 'rotate(45deg)'; /* Girar 45 graus ao clicar */
+flashcards.forEach((flashcard) => {
+  flashcard.addEventListener('click', () => {
+    flashcard.classList.toggle('flipped');
+  });
 });
