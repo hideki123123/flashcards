@@ -19,124 +19,71 @@
   
   header {
     min-height: 50px;
-  }
-  
-  h1 {
-    color: var(--punk-pink);
-    text-shadow: 0 0 10px var(--punk-pink), 0 0 20px var(--punk-pink);
-  }
-  
-  #container {
+}
+
+#container {
     width: 100%;
     display: flex;
-    gap: 0rem;
+    gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .flashcard {
+    justify-content: center;
+}
+
+.flashcard {
+    width: 500px;
+    height: 300px;
     position: relative;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s;
-  }
-  
-  .front, .back {
+    transform-style: preserve-3d; 
+    transition: transform 0.6s;
+}
+
+.flashcard.flip {
+    transform: rotateY(180deg); /* Rotação de 180 graus ao clicar */
+}
+
+.cartao-pergunta,
+.cartao-resposta {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    transition: transform 0.5s;
-  }
-  
-  .front {
-    background-color: #fff;
-    transform: rotateY(0deg);
-  }
-  
-  .back {
-    background-color: #f0f0f0;
-    transform: rotateY(180deg);
-  }
-  
-  .flashcard.flipped {
-    transform: rotateY(180deg);
-  }
-  
-  .flashcard.flipped .front {
-    transform: rotateY(180deg);
-  }
-  
-  .flashcard.flipped .back {
-    transform: rotateY(0deg);
-  }
-  
-  .question {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .answer {
-    font-size: 1em;
-    color: var(--punk-green);
-    opacity: 0.9;
-  }
-  
-  footer {
-    min-height: 50px;
-    background-color: var(--glass-cyan);
-    padding: .25rem;
-  }
-  
-  @media (max-width: 600px) {
-    #container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .flashcard {
-      width: 90%; /* Adjust the width for smaller screens */
-    }
-  }
-  .flashcard {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    perspective: 1000px; /* Adiciona perspectiva para o efeito 3D */
-    cursor: pointer; /* Aponta que o cartão é clicável */
-    transform-style: preserve-3d; /* Preserva o efeito 3D */
-    transition: transform 0.6s; /* Suaviza a transição do giro */
-}
-
-.front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Esconde a face de trás quando girada */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 10px; 
+    font-size: 1.5em; 
 }
 
-.front {
-    background-color: #fff;
-    color: #000;
-    transform: rotateY(0deg); /* Define a rotação inicial da frente */
+
+.cartao-resposta {
+    transform: rotateY(180deg); /* Inverte a resposta para que fique oculta inicialmente */
+    visibility: hidden;
 }
 
-.back {
-    background-color: #f0f0f0;
-    color: #000;
-    transform: rotateY(180deg); /* Define a rotação inicial da parte de trás */
+.flashcard.flip .cartao-resposta {
+    visibility: visible; /* Mostra a resposta ao clicar */
 }
 
-.flashcard.flipped {
-    transform: rotateY(180deg); /* Quando clicado, o cartão gira 180 graus */
+.flashcard.flip .cartao-pergunta {
+    visibility: hidden; /* Oculta a pergunta ao clicar */
+}
+
+.cartao-pergunta {
+    display: flex;
+    flex-direction: column; /* Coloca o título e a pergunta em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100%; /* Preenche a altura do cartão */
+}
+
+.cartao-pergunta h3 {
+    margin-bottom: 10px; /* Espaço entre o título e a pergunta */
+    text-align: center; /* Centraliza o texto do título */
+}
+
+.cartao-pergunta p {
+    text-align: center; /* Centraliza o texto da pergunta */
 }
