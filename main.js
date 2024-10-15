@@ -17,6 +17,3 @@ function criaCartao(categoria, pergunta, resposta) {
     
     container.appendChild(cartao);
 }
-function showAnser(card){
-
-}
