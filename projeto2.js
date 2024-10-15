@@ -20,11 +20,10 @@ function criaCartao(categoria, pergunta, resposta) {
 function showAnser(card){
     const answer = document.querySelector('.cartao-resposta');
     if(answer.computedStyleMap.display === 'none'){
-        answer.computedStyleMap.display === 'block';
+        answer.computedStyleMap.display = 'block';
 
     }
     else{
-        answer.computedStyleMap.display === 'none';
-
+        answer.computedStyleMap.display = 'none';
     }
 }
