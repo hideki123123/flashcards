@@ -59,20 +59,6 @@
     font-size: 1.5em; 
 }
 
-
-.cartao-resposta {
-    transform: rotateY(180deg); /* Inverte a resposta para que fique oculta inicialmente */
-    visibility: hidden;
-}
-
-.flashcard.flip .cartao-resposta {
-    visibility: visible; /* Mostra a resposta ao clicar */
-}
-
-.flashcard.flip .cartao-pergunta {
-    visibility: hidden; /* Oculta a pergunta ao clicar */
-}
-
 .cartao-pergunta {
     display: flex;
     flex-direction: column; /* Coloca o título e a pergunta em coluna */
