@@ -17,7 +17,7 @@ function criaCartao(categoria, pergunta, resposta) {
     
     container.appendChild(cartao);
 }
-function showAnser(card){
+function showAnswer(card){
     const answer = document.querySelector('.cartao-resposta');
     if(answer.computedStyleMap.display === 'none'){
         answer.computedStyleMap.display = 'block';
