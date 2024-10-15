@@ -1,5 +1,5 @@
 :root {
-    --punk-cyan: #2600ff;
+    --punk-cyan: #da1223;
     --punk-green: #000000;
     --glass-cyan: rgba(0, 255, 255, 0.3);
     --punk-pink: #0098fd;
@@ -89,3 +89,12 @@
 .cartao-pergunta p {
     text-align: center; /* Centraliza o texto da pergunta */
 }
+
+
+#container{
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
