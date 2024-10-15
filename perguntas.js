@@ -42,7 +42,7 @@ criaCartao (
     'qual foi o impacto da revolução francesa nas primeiras rebeliões na América espanhola?',
     'inspirou movimentos de independência e rebelioes cobrra o dominio colonial espanhol na america latina')
     
-    criaCrtao(
+    criaCartao(
     'historia',
     'como a revolução americana influenciou as prineiras rebelioes na america espanhola?',
     'encorajou e inspirou a independência de uma colonia encorajando a lutar pela independência')
