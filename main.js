@@ -4,7 +4,7 @@ function criaCartao(categoria, pergunta, resposta) {
     cartao.className = 'cartao';
 
     cartao.innerHTML = `
-    <div class="flashcard" onclick="this.classList.toggle('flip')">
+    <div class="flashcard conteudo" onclick="this.classList.toggle('flip')">
         <div class="cartao-pergunta question">
             <h3>${categoria}</h3>
             <p>${pergunta}</p>

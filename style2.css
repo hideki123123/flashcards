@@ -98,3 +98,11 @@
 
 }
 
+.conteudo{
+    padding: 2rem;
+    border: 2px solid var(--punk-cyan);
+    background-color: var(--punk-green);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 3px var(--bg-black);
+
+}
