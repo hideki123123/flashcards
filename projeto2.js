@@ -19,11 +19,11 @@ function criaCartao(categoria, pergunta, resposta) {
 }
 function showAnswer(card){
     const answer = document.querySelector('.cartao-resposta');
-    if(answer.computedStyleMap.display === 'none'){
-        answer.computedStyleMap.display = 'block';
+    if(answer.style.display === 'none'){
+        answer.style.display = 'block';
 
     }
     else{
-        answer.computedStyleMap.display = 'none';
+        answer.style.display = 'none';
     }
 }
